@@ -9,7 +9,7 @@ $db = Flight::db();
 
 Flight::route('/', function () {
     global $db;
-    $data = $db->getAll('books');
+    $data = $db->getAll('user');
     Flight::json($data);
 });
 
